@@ -7,11 +7,11 @@
 
 本书并不会介绍太多的基础知识点，在阅读本书前，你需要了解并熟悉 ES6、React、Koa 等基本知识，并且具有 Node.js 相当不错的使用经验。
 
-
-目录：[ React 服务端渲染实战 ](SUMMARY.md)
+- 阅读：https://react-server-render-in-action.netlify.com/
+- 作者：http://me.lizhooh.com/
 
 ### 关于此书
 本书是作者在工作之余编写的一本 React 服务端渲染实战性书籍，里面记录了满满的 React、Nodejs 开发经验。
 
-
--
+### 关于作者
+Lizhooh，计算机科学与技术专业，目前是前端开发工程师（跨栈开发工程师），参与负责前端模块化、组件化、工程化的架构演进；推进前后端分离，构建 SPA/SSR 化的 Web 应用。对 Web 前端开发，Nodejs/Go 后端开发，混合式移动应用开发，数据挖掘与可视化等技术有着丰富的兴趣。
