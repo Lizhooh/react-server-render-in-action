@@ -1,0 +1,105 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100%;
+}
+#app {
+    height: 100%;
+}
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    padding-bottom: 200px;
+    flex-direction: column;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button, input {
+    font-family: inherit;
+}
+
+.input {
+    padding: 0.3em 0.7em;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    height: 30px;
+    box-shadow: 1px 2px 2px rgba(1, 1, 1, 0.12);
+    color: #333;
+    width: 420px;
+}
+
+.button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background-color: orange;
+    color: #fff;
+    padding: 0.4em 1.2em;
+    height: 31px;
+    border-radius: 0 3px 3px 0;
+    box-shadow: 1px 2px 2px rgba(1, 1, 1, 0.12);
+}
+
+.title {
+    font-size: 38px;
+    font-weight: normal;
+    color: orange;
+    text-shadow: 1px 2px 2px rgba(1, 1, 1, 0.12);
+    font-family: '微软雅黑';
+}
+
+.hot {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 -1px 2px rgba(1, 1, 1, 0.06), 1px 2px 2px rgba(1, 1, 1, 0.06);
+    display: none;
+    transition: height 0.24s ease-in-out;
+    overflow: hidden;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            padding: 6px 12px;
+            font-size: 14px;
+            span {
+                &:first-of-type {
+                    color: #444;
+                    margin-right: 8px;
+                }
+                &:last-of-type {
+                    color: #a5a7a8;
+                    font-size: 13px;
+                }
+            }
+            &:hover {
+                cursor: pointer;
+                background-color: #f8f8f8;
+            }
+        }
+    }
+}
+
+.input-panel {
+    position: relative;
+}

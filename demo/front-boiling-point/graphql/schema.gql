@@ -1,0 +1,46 @@
+# 查询模型
+type Query {
+    # 用户信息
+    user(id: String!): User
+    # 沸点列表
+    boils(limit: Int!, offset: Int!): [Boil]
+}
+
+type Mutation {
+    createBoil(
+        content: String!,
+        image: String,
+        userId: String!,
+        userName: String!,
+    ): Boolean,
+
+    updateBoil(
+        id: String!,
+        content: String!,
+        image: String,
+    ): Boolean,
+
+    removeBoil(id: String!): Boolean,
+
+    addLike(bid: String!, uid: String!): Boolean,
+    cancelLike(bid: String!, uid: String!): Boolean,
+}
+
+# 用户模型
+type User {
+    id: String,
+    name: String,
+    email: String,
+    summary: String,
+}
+
+# 沸点模型
+type Boil {
+    id: String,
+    content: String,
+    image: String,
+    user: User,
+    createdAt: String,
+    updatedAt: String,
+    likes: [String],
+}

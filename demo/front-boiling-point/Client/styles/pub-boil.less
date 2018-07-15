@@ -1,0 +1,54 @@
+
+.pub-boil {
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(1, 1, 1, 0.18);
+    padding-top: 120px;
+
+    .box {
+        background-color: #fff;
+        height: 340px;
+        padding: 30px;
+        border-radius: 3px;
+        box-shadow: 3px 4px 8px rgba(1, 1, 1, 0.16);
+    }
+
+    .input {
+        &-content {
+            display: block;
+            width: 720px;
+            max-width: 720px;
+            min-width: 720px;
+            min-height: 200px;
+            line-height: 1.6;
+            color: #444;
+            font-size: 15px;
+            background-color: #fafbfc;
+            box-shadow: none;
+        }
+        &-image {
+            display: block;
+            width: 720px;
+            background-color: #f7f8f9;
+            box-shadow: none;
+            color: #444;
+        }
+    }
+
+    .submit, .back {
+        margin-top: 20px;
+        background-color: #3af;
+        color: #fff;
+        border-radius: 2px;
+    }
+    .back {
+        background-color: #e8e9ea;
+        color: #444;
+    }
+}
