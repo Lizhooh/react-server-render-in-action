@@ -12,26 +12,51 @@
 </head>
 <body>
     <template id="index_temp">
-        <div class="container">
-            <section>
-                <h1 class="title">《 React 服务端渲染实战 》</h1>
-                <p class="summary">
-                    这是一本关于 React 服务端渲染的书籍。
-                    在本书里，你将了解到 React 服务端渲染的基础知识、前端与 Nodejs 技术融合以及一些 React 服务端渲染框架的使用，还将学习到了如何对现有的服务端渲染应用进行性能优化，不同方式实现的服务端渲染应用示例。
-                </p>
-                <div class="links">
-                    <a href="/#/readme">Github</a>
-                    <a href="/#/readme" class="getter-start">开始</a>
+        <div class="bg"></div>
+        <div class="container">   
+            <div class="left">
+                <div class="logo"></div>
+                <p style="text-align: center; margin: 40px 0 8px">扫一扫，手机上阅读</p>
+                <div class="qrcode"></div>
+
+                <div class="footer">
+                    <a href="/#/readme" class="start">开始阅读</a>
                 </div>
-                <a class="author" href="http://me.lizhooh.com" target="_blank">
-                    <img src="http://me.lizhooh.com/img/my.png" />
-                    <span>Lizooh</span>
-                    <span>著</span>
-                    <span>-</span>
-                    <span>2018 年 · 5 月</span>
-                </a>
-            </section>
+            </div>
+            <div class="right">
+                <div class="title">React 服务端渲染实战</div>
+                <div class="author-info">
+                    作者：
+                    <img src="http://me.lizhooh.com/img/my.png" class="author-avatar" />
+                    <a href="http://me.lizhooh.com" target="_blank">Lizhooh</a>
+                    <span class="time">2018 年 · 5 月</span>
+                </div>
+                <div class="tags">
+                    <span class="tag" style="margin-left: 0">前端</span>
+                    <span class="tag">Nodejs</span>
+                    <span class="tag">React</span>
+                    <span class="tag">Redux</span>
+                    <span class="tag">同构应用</span>
+                </div>
+                <div class="summary">
+                    这是一本关于 React 服务端渲染的书籍，在本书里，你将了解到：
+                    <ul>
+                        <li>React 服务端渲染的基础知识</li>
+                        <li>前端与 Nodejs 技术融合</li>
+                        <li>React 服务端渲染框架的使用</li>
+                        <li>如何对现有的服务端渲染应用进行性能优化</li>
+                        <li>不同方式实现的服务端渲染应用示例</li>
+                    </ul>
+                </div>
+                <div>
+                    <div class="author-title">关于作者</div>
+                    <div class="author">
+                        Lizhooh，计算机科学与技术专业，目前是前端开发工程师（跨栈开发工程师），参与负责前端模块化、组件化、工程化的架构演进；推进前后端分离，构建 SPA/SSR 化的 Web 应用。对 Web 前端开发，Nodejs/Go 后端开发，混合式移动应用开发，数据挖掘与可视化等技术有着丰富的兴趣。
+                    </div>
+                </div>
+            </div>
         </div>
+        <div style="height: 500px"></div>
     </template>
     <div id="index_view"></div>
     <div id="app"></div>
